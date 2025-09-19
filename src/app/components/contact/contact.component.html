@@ -1,0 +1,36 @@
+
+<div class="contact">
+  <div class="formsection">
+    <!-- Left side -->
+    <div class="tile">
+      <p>Get In Touch</p>
+      <p>Let's talk about everything!</p>
+         <a class="mail" href="mailto:rahulksuresh370@gmail.com">
+    Don't like forms? Send me an email. 👋
+  </a>
+    </div>
+
+    <!-- Right side -->
+    <div class="form">
+      <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+        <div class="name">
+          <input placeholder="Your name" type="text" formControlName="name" />
+        </div>
+        <div class="email">
+          <input [ngClass]="{ 'is-invalid': userForm.get('email')?.invalid && userForm.get('email')?.dirty,
+            'is-valid': userForm.get('email')?.valid && userForm.get('email')?.dirty
+           } " type="email" placeholder="Email Address" formControlName="email" />
+        </div>
+        <div class="subject">
+          <input type="text" placeholder="Subject" formControlName="subject" />
+        </div>
+        <div class="message">
+          <textarea placeholder="Message" formControlName="message"></textarea>
+        </div>
+        <div class="btn">
+          <button [disabled]="userForm.invalid">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

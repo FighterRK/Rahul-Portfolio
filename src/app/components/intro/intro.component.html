@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="intro-container" (mouseenter)="onHoveringdiv()" (mouseleave)="onLeavingDiv()">
+
+    <div class="intro-pic">
+      <img src="assets/images/me.png" alt="me">
+    </div>
+    <div class="intro-name">
+      <h1>Rahul K Suresh</h1>
+    </div>
+    <div class="intro-title">
+      <p>I'm a <strong>Software Developer</strong>, staying <strong class="dynamic-word">{{ currentWord }}</strong></p>
+    </div>
+    <div class="intro-media">
+      <div class="media-insta">
+        <a class="fa fa-instagram" target="_blank" href="https://www.instagram.com/rahul_the_glitch"
+          aria-hidden="true"></a>
+      </div>
+      <div class="media-linkedin">
+        <a target="_blank" href="https://www.linkedin.com/in/rahul-k-suresh-bb7933220/" class="fa fa-linkedin"
+          aria-hidden="true"></a>
+      </div>
+
+
+    </div>
+    <div class="intro-btn">
+      <a href="assets/Resume_Rahul [2025].pdf" download class="btn btn-primary" target="_blank">
+        <i class="fa fa-download"></i> Download CV
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>

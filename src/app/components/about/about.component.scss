@@ -1,0 +1,134 @@
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+  height: 100vh;
+  background-color: #f9f9ff;
+
+  .abt-tab-2{
+    padding: 20px;
+    position: relative;
+    max-width: 800px;
+    height: 350px;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  border-radius: 10px;
+  }
+  .me-img{
+    padding: 44px;
+  }
+  .title-abt h1{
+    font-weight: 700;
+  }
+  .section_one{
+      display: flex;
+    justify-content: space-around;
+  align-items: center;
+  }
+}
+  img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+  }
+
+  .arrow-left {
+      position: absolute;
+      left: -10px;
+      top: 180px;
+  width: 0; 
+  height: 0; 
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; 
+  
+  border-right:10px solid rgb(255, 255, 255); 
+}
+
+.prg-bar{
+  padding: 30px;
+}
+
+
+
+.click{
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #fa6400;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.click:hover,
+.click:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.click:hover {
+  transform: translateY(-1px);
+}
+
+.click:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.abt-btn{
+  text-align: center;
+}
+.content p {
+  color: #5e5c7f;
+  line-height: 1.7;
+  padding: 10px;
+  margin-bottom: 0 !important;
+}
+
+.section_two .projects{
+    display: flex;
+    justify-content: space-around;
+  align-items: center;
+  color: #5E5C7F;
+  font-style: 16px;
+}
+
+.section_two{
+           font-family: Arial, Helvetica, sans-serif;
+  i::before {
+    color: #dedeea;
+    margin-right: 10px;
+    font-size: 46px;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 600;
+
+  }
+.projects li {
+  display: flex;    
+  align-items: center; 
+  gap: 10px;
+  list-style: none;
+}
+
+}

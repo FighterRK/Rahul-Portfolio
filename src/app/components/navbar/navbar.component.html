@@ -1,0 +1,23 @@
+<div class="sidebar"  (mouseleave)="isExpand=false" [class.expanded]="isExpand">
+  <ul>
+    <li (click)="navigateAndScroll('intro')" class="fa fa-home">
+  @if(isExpand) { <span>Home</span> }
+</li>
+<li (click)="navigateAndScroll('about')" class="fa fa-user">
+  @if(isExpand) { <span>About</span> }
+</li>
+<li (click)="navigateAndScroll('services')" class="fa fa-cogs">
+  @if(isExpand) { <span>Services</span> }
+</li>
+<li (click)="navigateAndScroll('exp')" class="fa fa-briefcase">
+  @if(isExpand) { <span>Experience</span> }
+</li>
+<li (click)="navigateAndScroll('works')" class="fa fa-th-large">
+  @if(isExpand) { <span>Works</span> }
+</li>
+<li (click)="navigateAndScroll('contact')" class="fa fa-envelope">
+  @if(isExpand) { <span>Contact</span> }
+</li>
+
+  </ul>
+</div>

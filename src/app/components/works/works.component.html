@@ -1,0 +1,32 @@
+<div class="works-container">
+  <h2 class="section-title">My Works</h2>
+
+  <div class="repo-grid">
+    @for (repo of repos; track repo.id) {
+      <div class="repo-card">
+        <h3>{{ repo.name }}</h3>
+        <p>{{ repo.description || 'No description available.' }}</p>
+
+        @if (repo.topics?.length > 0) {
+          <div class="tags">
+            @for (tag of repo.topics; track $index) {
+              <span>{{ tag }}</span>
+            }
+          </div>
+        }
+
+        <div class="actions">
+          <a [href]="repo.html_url" target="_blank">View Code</a>
+          @if (repo.homepage) {
+            <a [href]="repo.homepage" target="_blank">Live Demo</a>
+          }
+        </div>
+      </div>
+    }
+  </div>
+  <div class="info-sec">
+    <a href="https://github.com/FighterRK?tab=repositories" target="_blank"> 👉 Find more of my code here</a>
+  </div>
+</div>
+
+

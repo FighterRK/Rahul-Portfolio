@@ -1,0 +1,13 @@
+.main-body{
+  display: flex;
+  min-height: 100vh;
+}
+.content {
+  flex: 1;
+}
+
+.collapse-navbar{
+  position: sticky;
+  top: 0;
+    align-self: flex-start;
+}
